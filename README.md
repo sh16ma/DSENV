@@ -1,3 +1,25 @@
+## 構成
+
+```
+# Host
+docker/
+  ┝ dsenv_build/
+  │　　└ Dockerfile
+  └ ds_python/ (任意)
+
+# Docker Containar
+  /
+  ┝ bin/
+  ~
+  ┝ opt/
+  │　└ anaconda3
+  └ work/ (「ds_python」と紐づいている)
+
+```
+
+---
+## 手順
+
 準備
 ```sh
 $ mkdir docker
