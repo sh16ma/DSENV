@@ -13,8 +13,8 @@ docker/
   ~
   ┝ opt/
   │　└ anaconda3
-  └ work/ (「ds_python」と紐づいている)
-
+  └ work/ (「ds_python」と紐づいている。)
+     └ (eg.「test.ipnb」　Jupyterlabで分析する場所。)
 ```
 
 ---
