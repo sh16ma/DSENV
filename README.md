@@ -1,3 +1,6 @@
+## 念頭
+ローカル環境下で、データ分析環境を容易に構築するためのDockerfile
+
 ## 構成
 
 ```
@@ -17,21 +20,23 @@ docker/
      └ (eg.「test.ipnb」　Jupyterlabで分析する場所。)
 ```
 
----
-## 手順
+## 構築手順
 
-準備
+1. 準備
+任意にローカル上にディレクトリを作成して移動。
 ```sh
 $ mkdir docker
 $ cd docker
 ```
 
-Dockerイメージの作成
+
+2. Dockerイメージの作成
 ```sh
 $ docker build .
 ```
 
-Dockerコンテナ起動
+3. Dockerコンテナ起動
 ```sh
 $ docker run -p 8888:8888 -v ~/docker/ds_python:work --name my_lab {image}
 ```
+
