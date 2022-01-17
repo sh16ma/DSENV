@@ -78,6 +78,14 @@ $ ssh -i hoge.pem ubuntu@ec2-00-100-200-300.ap-northeast-1.compute.amazonaws.com
 (aws)$ cd dsenv_build
 (aws)~/dsenv_build$ docker build .
 ```
+* dockerコンテナ、JupyterLab起動。
+```sh
+(aws)~dsenv_build$ docker run -v ~:/work -p 8888:8888 {imageID}
+```
+
+`@ec2-00-100-200-300.ap-northeast-1.compute.amazonaws.com:8888`
+にブラウザーからアクセスする`。
+
 
 #### (case2) クラウドがネットワークに繋がれないなら。
 * ローカルでDockerimageをtarで圧縮
